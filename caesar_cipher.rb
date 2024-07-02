@@ -10,6 +10,8 @@ def caesar_cipher(message, order)
       else
         encrypted_message << (char.ord + order).chr
       end
+    elsif char.ord >= 65 && char.ord <= 90
+      encrypted_message << (char.ord + order).chr
     else
       encrypted_message << char
     end
